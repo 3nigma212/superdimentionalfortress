@@ -22,6 +22,15 @@ client.on('message', message => {
 
 });
 
+client.on('message', message => {
+
+    if (message.content === 's!info Dimas') {
+
+       message.reply('Ms. Dimas: All Stars ELA Teacher');
+
+       }
+
+
  
 
 // THIS  MUST  BE  THIS  WAY
