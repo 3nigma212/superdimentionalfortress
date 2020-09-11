@@ -29,7 +29,7 @@ client.on('message', message => {
        message.reply('Ms. Dimas: All Stars ELA Teacher');
 
        }
-
+});
 
  
 
