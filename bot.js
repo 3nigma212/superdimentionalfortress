@@ -58,6 +58,15 @@ client.on('message', message => {
        }
 });
 
+client.on('message', message => {
+
+    if (message.content === 's!help') {
+
+       message.author.send("Commands: \n r!info <Teacher Last Name>. MAKE SURE YOU CAPITALIZE! \n AAAAAAANDDDD... That's it so far. In development.");
+
+       }
+});
+
 
 
  
