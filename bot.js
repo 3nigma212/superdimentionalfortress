@@ -26,7 +26,7 @@ client.on('message', message => {
 
     if (message.content === 's!info Dimas') {
 
-       message.reply('Ms. Dimas: All Stars ELA Teacher');
+       message.reply('`Ms. Dimas: All Stars ELA Teacher`');
 
        }
 });
@@ -35,7 +35,7 @@ client.on('message', message => {
 
     if (message.content === 's!info Chiu') {
 
-       message.reply('Mr. Chiu: All Stars Math Teacher');
+       message.reply('`Mr. Chiu: All Stars Math Teacher`');
 
        }
 });
@@ -44,7 +44,7 @@ client.on('message', message => {
 
     if (message.content === 's!info Dwyer') {
 
-       message.reply('Mrs. Dwyer: All Stars Science Teacher');
+       message.reply('`Mrs. Dwyer: All Stars Science Teacher`');
 
        }
 });
@@ -53,7 +53,7 @@ client.on('message', message => {
 
     if (message.content === 's!info Mrs. Haughey') {
 
-       message.reply('Mrs. Haughey: All Stars History Teacher');
+       message.reply('`Mrs. Haughey: All Stars History Teacher`');
 
        }
 });
