@@ -60,6 +60,17 @@ client.on('message', message => {
 
 client.on('message', message => {
 
+    if (message.content === 's!meme') {
+     const footballmeme = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+     message.channel.send(footballmeme)
+
+       }
+});
+
+const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+
+client.on('message', message => {
+
     if (message.content === 's!help') {
 
        message.author.send("`Commands: \n r!info <Teacher Last Name>. MAKE SURE YOU CAPITALIZE! \n AAAAAAANDDDD... That's it so far. In development.`");
