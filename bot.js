@@ -81,6 +81,16 @@ client.on('message', message => {
        }
 });
 
+client.on('message', message => {
+
+    if (message.content === 's!about') {
+
+       message.channel.send("`Coded by 3nigma212 \n Beta tested by 3nigma212 \n Still a WIP.`");
+
+       }
+});
+
+
 
 
  
