@@ -11,7 +11,7 @@ client.on('ready', () => {
 });
 
  
-
+// The ping pong game
 client.on('message', message => {
 
     if (message.content === 'ping') {
@@ -22,6 +22,7 @@ client.on('message', message => {
 
 });
 
+// InfoCards
 client.on('message', message => {
 
     if (message.content === 's!info Dimas') {
@@ -58,6 +59,7 @@ client.on('message', message => {
        }
 });
 
+// help message
 client.on('message', message => {
 
     if (message.content === 's!help') {
@@ -71,6 +73,6 @@ client.on('message', message => {
 
  
 
-// THIS  MUST  BE  THIS  WAY
+
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
