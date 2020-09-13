@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.on("ready", () =>{
     console.log(`Ready to comply.`);
-    bot.user.setActivity('Need more developers and beta testers, please sign up by DMing Daniel.');
+    bot.user.setActivity('Need more developers and beta testers, please sign up by DMing Daniel.' {type: 'STREAMING'}).catch(console.error);
  
  });
  
