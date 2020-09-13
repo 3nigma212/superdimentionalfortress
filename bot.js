@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
 
-    console.log('I got this!');
+    console.log('Ready to comply.');
 
 });
 
