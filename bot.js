@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.on("ready", () =>{
     console.log(`Ready to comply.`);
-    
+    bot.user.setActivity('s!help', {type: 'PLAYING'}).catch(console.error);
 });
  
 // The ping pong game
