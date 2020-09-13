@@ -4,20 +4,16 @@ const client = new Discord.Client();
 
  
 
-client.on('ready', () => {
-
-    console.log('Ready to comply.');
- 
-   client.user.setPresence({
-    status: 'online',
-    activity: {
-        name: 'with new developers and beta testers, we need them, DM Daniel for more info.',
-        type: 'STREAMING',
-    
-    }
-});
-});
-
+client.on("ready", () =>{
+    console.log(`Ready to comply.`);
+    client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "need developers, DM Daniel for more info, BTW, you can learn the language at discord.js.org.",  //The message shown
+            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+ });
  
 // The ping pong game
 client.on('message', message => {
