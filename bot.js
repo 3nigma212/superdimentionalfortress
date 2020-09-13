@@ -11,7 +11,7 @@ client.on('ready', () => {
 });
 
  
-
+// The ping pong game
 client.on('message', message => {
 
     if (message.content === 'ping') {
@@ -22,6 +22,7 @@ client.on('message', message => {
 
 });
 
+// InfoCards
 client.on('message', message => {
 
     if (message.content === 's!info Dimas') {
@@ -31,6 +32,7 @@ client.on('message', message => {
        }
 });
 
+// Another info card
 client.on('message', message => {
 
     if (message.content === 's!info Chiu') {
@@ -58,11 +60,23 @@ client.on('message', message => {
        }
 });
 
+// help messages
+client.on('message', message => {
+
+    if (message.content === 's!meme') {
+     const footballmeme = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+     message.channel.send(footballmeme)
+
+       }
+});
+
+const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+
 client.on('message', message => {
 
     if (message.content === 's!help') {
 
-       message.author.send("Commands: \n r!info <Teacher Last Name>. MAKE SURE YOU CAPITALIZE! \n AAAAAAANDDDD... That's it so far. In development.");
+       message.author.send("`Commands: \n r!info <Teacher Last Name>. MAKE SURE YOU CAPITALIZE! \n AAAAAAANDDDD... That's it so far. In development.`");
 
        }
 });
@@ -71,6 +85,6 @@ client.on('message', message => {
 
  
 
-// THIS  MUST  BE  THIS  WAY
+
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
