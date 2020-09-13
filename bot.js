@@ -32,6 +32,7 @@ client.on('message', message => {
        }
 });
 
+// Another info card
 client.on('message', message => {
 
     if (message.content === 's!info Chiu') {
