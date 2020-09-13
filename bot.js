@@ -7,12 +7,15 @@ const client = new Discord.Client();
 client.on('ready', () => {
 
     console.log('Ready to comply.');
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'with the fact that we need developers, dm 3nigma212 if you want to.',
-         }
-    });        
+ 
+   bot.user.setPresence({
+    status: 'online',
+    activity: {
+        name: 'with new developers and beta testers, we need them, DM Daniel for more info.',
+        type: 'STREAMING',
+    
+    }
+});
 });
 
  
