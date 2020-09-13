@@ -6,13 +6,7 @@ const client = new Discord.Client();
 
 client.on("ready", () =>{
     console.log(`Ready to comply.`);
-    client.user.setPresence({
-        status: "online",  //You can show online, idle....
-        game: {
-            name: "need developers, DM Daniel for more info, BTW, you can learn the language at discord.js.org.",  //The message shown
-            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
-        }
-    });
+    bot.user.setActivity('Need more developers and beta testers, please sign up by DMing Daniel.')
  });
  
 // The ping pong game
