@@ -64,13 +64,13 @@ client.on('message', message => {
 client.on('message', message => {
 
     if (message.content === 's!meme') {
-     const footballmeme = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+     const attachment = new footballmeme('https://i.imgur.com/w3duR07.png');
      message.channel.send(footballmeme)
 
        }
 });
 
-const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+
 
 client.on('message', message => {
 
