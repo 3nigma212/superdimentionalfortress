@@ -8,7 +8,7 @@ client.on('ready', () => {
 
     console.log('Ready to comply.');
  
-   bot.user.setPresence({
+   client.user.setPresence({
     status: 'online',
     activity: {
         name: 'with new developers and beta testers, we need them, DM Daniel for more info.',
