@@ -59,7 +59,7 @@ client.on('message', message => {
        }
 });
 
-// help message
+// help messages
 client.on('message', message => {
 
     if (message.content === 's!help') {
