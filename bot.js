@@ -5,12 +5,12 @@ const client = new Discord.Client();
  
 
 client.on("ready", () =>{
-    console.log(`Logged in as ${client.user.tag}!`);
+    console.log(`Logged in as SDF bOt`);
     client.user.setPresence({
         status: "online",  //You can show online, idle....
         game: {
             name: "Using s!help",  //The message shown
-            type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
@@ -37,11 +37,12 @@ client.on('message', message => {
 });
 
 // Another info card
+var CHiuCOmmand = "s!info Chiu";
 client.on('message', message => {
 
-if (message.content.toLowerCase().includes("s!info Chiu".toLowerCase())
-
-       message.reply('`Mr. Chiu: All Stars Math Teacher`');
+if(CHiuCOmmand.toLowerCase().includes("chiu".toLowerCase()){
+ message.react("`Mr. Chiu: All Stars Math Teacher`")
+}
 
        }
 });
