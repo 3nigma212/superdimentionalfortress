@@ -5,9 +5,15 @@ const client = new Discord.Client();
  
 
 client.on("ready", () =>{
-   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-   client.user.setActivity(`Serving ${client.guilds.size} servers`);
-});
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "Using s!help",  //The message shown
+            type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+ });
  
 // The ping pong game
 client.on('message', message => {
@@ -33,7 +39,7 @@ client.on('message', message => {
 // Another info card
 client.on('message', message => {
 
-    if (message.content === 's!info Chiu') {
+if (message.content.toLowerCase().includes("s!info Chiu".toLowerCase())
 
        message.reply('`Mr. Chiu: All Stars Math Teacher`');
 
