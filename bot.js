@@ -29,7 +29,7 @@ client.on('message', message => {
 // InfoCards
 client.on('message', message => {
 
-    if (message.content === 's!info Dimas') {
+    if (message.content.toLowerCase('s!info Dimas')) {
 
        message.reply('`Ms. Dimas: All Stars ELA Teacher`');
 
@@ -49,7 +49,7 @@ if(CHiuCOmmand.toLowerCase().includes("chiu".toLowerCase()){
 
 client.on('message', message => {
 
-    if (message.content === 's!info Dwyer') {
+    if (message.content.toLowerCase('s!info Dwyer')) {
 
        message.reply('`Mrs. Dwyer: All Stars Science Teacher`');
 
@@ -58,7 +58,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === 's!info Mrs. Haughey') {
+    if (message.content.toLowerCase('s!info Mrs. Haughey')) {
 
        message.reply('`Mrs. Haughey: All Stars History Teacher`');
 
@@ -68,7 +68,7 @@ client.on('message', message => {
 // help messages
 client.on('message', message => {
 
-    if (message.content === 's!meme') {
+    if (message.content.toLowerCase('s!meme')) {
      const attachment = new footballmeme('https://i.imgur.com/w3duR07.png');
      message.channel.send(footballmeme)
 
