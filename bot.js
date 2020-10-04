@@ -5,7 +5,7 @@ const client = new Discord.Client();
  
 
 client.on("ready", () =>{
-    console.log(`Logged in as SDF bOt`);
+    console.log(`Logged in as SDF Bot`);
     client.user.setPresence({
         status: "online",  //You can show online, idle....
         game: {
