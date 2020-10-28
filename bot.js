@@ -29,7 +29,7 @@ client.on('message', message => {
 // InfoCards
 client.on('message', message => {
 
-    if (message.content.toLowerCase('s!info Dimas')) {
+    if (message.content.toLowerCase('s!info dimas')) {
 
        message.reply('`Ms. Dimas: All Stars ELA Teacher`');
 
