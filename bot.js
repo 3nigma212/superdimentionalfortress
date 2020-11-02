@@ -37,7 +37,6 @@ client.on('message', message => {
 });
 
 // Another info card
-var CHiuCOmmand = "s!info Chiu";
 client.on('message', message => {
 
 if (message.content.toLowerCase('s!info chiu'))  {
