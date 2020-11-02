@@ -40,8 +40,8 @@ client.on('message', message => {
 var CHiuCOmmand = "s!info Chiu";
 client.on('message', message => {
 
-if(CHiuCOmmand.toLowerCase().includes("chiu".toLowerCase()){
- message.react("`Mr. Chiu: All Stars Math Teacher`")
+if (message.content.toLowerCase('s!info chiu'))  {
+ message.reply("`Mr. Chiu: All Stars Math Teacher`")
 }
 
        }
